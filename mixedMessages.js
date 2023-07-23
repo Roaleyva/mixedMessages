@@ -17,3 +17,9 @@ const selectString2 = () => {
 const selectString3 = () => {
     return Math.floor(Math.random() * allPhrases.string3.length);
 }
+
+const messageGenerator = () => {
+    console.log(allPhrases.string1[selectString1()] + " " + allPhrases.string2[selectString2()] + " " + allPhrases.string3[selectString3()]);
+}
+
+messageGenerator();
